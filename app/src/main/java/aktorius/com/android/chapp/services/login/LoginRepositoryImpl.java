@@ -11,12 +11,11 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.ValueEventListener;
 
-import org.greenrobot.eventbus.EventBus;
-
 import aktorius.com.android.chapp.contracts.LoginRepository;
 import aktorius.com.android.chapp.domain.User;
 import aktorius.com.android.chapp.events.LoginEvent;
 import aktorius.com.android.chapp.helpers.FirebaseHelper;
+import aktorius.com.android.chapp.libraries.EventBus;
 import aktorius.com.android.chapp.libraries.GreenRobotEventBus;
 
 /**

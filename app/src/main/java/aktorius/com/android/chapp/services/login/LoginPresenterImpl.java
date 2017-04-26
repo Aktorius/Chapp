@@ -1,11 +1,12 @@
 package aktorius.com.android.chapp.services.login;
 
-import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
 
 import aktorius.com.android.chapp.contracts.LoginInteractor;
 import aktorius.com.android.chapp.contracts.LoginPresenter;
 import aktorius.com.android.chapp.contracts.LoginView;
 import aktorius.com.android.chapp.events.LoginEvent;
+import aktorius.com.android.chapp.libraries.EventBus;
 import aktorius.com.android.chapp.libraries.GreenRobotEventBus;
 
 /**
@@ -44,6 +45,7 @@ public class LoginPresenterImpl implements LoginPresenter {
     }
 
     @Override
+    @Subscribe
     public void onEventMainThread(LoginEvent event) {
         switch (event.getEventType()) {
             case LoginEvent.onSignInError:
