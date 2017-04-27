@@ -1,5 +1,6 @@
-package aktorius.com.android.chapp;
+package aktorius.com.android.chapp.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -12,6 +13,7 @@ import android.widget.RelativeLayout;
 
 import java.util.List;
 
+import aktorius.com.android.chapp.R;
 import aktorius.com.android.chapp.contracts.LoginPresenter;
 import aktorius.com.android.chapp.contracts.LoginView;
 import aktorius.com.android.chapp.services.login.LoginPresenterImpl;
@@ -20,10 +22,10 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 /**
- * A login screen that offers login via email/password.
+ * Created by Aktorius on 27/04/2017.
  */
-public class LoginActivity extends AppCompatActivity implements LoginView {
 
+public class LoginActivity extends AppCompatActivity implements LoginView {
     // UI references.
     @BindView(R.id.email)
     AutoCompleteTextView mEmailView;
@@ -48,7 +50,7 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
 
         loginPresenter = new LoginPresenterImpl(this);
         loginPresenter.onCreate();
-        //loginPresenter.checkForAuthenticatedUser();
+        loginPresenter.checkForAuthenticatedUser();
     }
 
     @Override
@@ -70,7 +72,7 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
     private void addEmailsToAutoComplete(List<String> emailAddressCollection) {
         //Create adapter to tell the AutoCompleteTextView what to show in its dropdown list.
         ArrayAdapter<String> adapter =
-                new ArrayAdapter<>(LoginActivity.this,
+                new ArrayAdapter<>(aktorius.com.android.chapp.activities.LoginActivity.this,
                         android.R.layout.simple_dropdown_item_1line, emailAddressCollection);
 
         mEmailView.setAdapter(adapter);
@@ -120,7 +122,7 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
 
     @Override
     public void navigateToMainScreen() {
-        //TODO: redirect to the contact list activity
+        startActivity(new Intent(this, ContactListActivity.class));
     }
 
     @Override
@@ -149,4 +151,3 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
         mPasswordView.setEnabled(enabled);
     }
 }
-
