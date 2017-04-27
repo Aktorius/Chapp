@@ -107,7 +107,7 @@ public class ContactListAdapter extends RecyclerView.Adapter<ContactListAdapter.
         contactList.remove(pos);
         this.notifyDataSetChanged();
     }
-    
+
     static class ViewHolder extends RecyclerView.ViewHolder{
         @BindView(R.id.imgAvatar)
         CircleImageView imgAvatar;
