@@ -1,5 +1,6 @@
 package aktorius.com.android.chapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -12,6 +13,7 @@ import android.widget.RelativeLayout;
 
 import java.util.List;
 
+import aktorius.com.android.chapp.activities.ContactListActivity;
 import aktorius.com.android.chapp.contracts.LoginPresenter;
 import aktorius.com.android.chapp.contracts.LoginView;
 import aktorius.com.android.chapp.services.login.LoginPresenterImpl;
@@ -48,7 +50,7 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
 
         loginPresenter = new LoginPresenterImpl(this);
         loginPresenter.onCreate();
-        //loginPresenter.checkForAuthenticatedUser();
+        loginPresenter.checkForAuthenticatedUser();
     }
 
     @Override
@@ -120,7 +122,7 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
 
     @Override
     public void navigateToMainScreen() {
-        //TODO: redirect to the contact list activity
+        startActivity(new Intent(this, ContactListActivity.class));
     }
 
     @Override
