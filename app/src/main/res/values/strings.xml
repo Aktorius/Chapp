@@ -20,4 +20,9 @@
     <string name="activity_contact_list_title">Contacts</string>
     <string name="contactlist.menu.action.signoff">Sign out</string>
     <string name="login.message.email">Email</string>
+    <string name="addcontact_message_contactadded">New contact added</string>
+    <string name="addcontact_error_message">Failed to add new contact</string>
+    <string name="addcontact_message_title">Add new contact</string>
+    <string name="addcontact_message_add">Add</string>
+    <string name="addcontact_message_cancel">Cancel</string>
 </resources>
