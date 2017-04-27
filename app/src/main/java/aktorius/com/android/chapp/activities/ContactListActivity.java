@@ -19,6 +19,7 @@ import aktorius.com.android.chapp.contracts.ContactListPresenter;
 import aktorius.com.android.chapp.contracts.ContactListView;
 import aktorius.com.android.chapp.contracts.OnItemClickListener;
 import aktorius.com.android.chapp.domain.User;
+import aktorius.com.android.chapp.fragments.AddContactFragment;
 import aktorius.com.android.chapp.libraries.ImageLoader;
 import aktorius.com.android.chapp.services.contactlist.ContactListPresenterImpl;
 import butterknife.BindView;
@@ -97,7 +98,8 @@ public class ContactListActivity extends AppCompatActivity
 
     @OnClick(R.id.fab)
     public void addContact(){
-        //TODO: Action when pressing the fab
+        AddContactFragment frag = new AddContactFragment();
+        frag.show(getSupportFragmentManager(), "");
     }
 
     private void setupAdapter() {
