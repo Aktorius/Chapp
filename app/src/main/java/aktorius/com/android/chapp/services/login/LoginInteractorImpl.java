@@ -11,6 +11,10 @@ public class LoginInteractorImpl implements LoginInteractor {
 
     private LoginRepository loginRepository;
 
+    public LoginInteractorImpl (){
+        this.loginRepository = new LoginRepositoryImpl();
+    }
+
     @Override
     public void checkAlreadyAuthenticated() {
         loginRepository.checkAlreadyAuthenticated();
