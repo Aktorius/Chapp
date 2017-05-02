@@ -24,5 +24,8 @@
         <activity android:name=".activities.ContactListActivity"
                   android:label="@string/activity_contact_list_title"
                   android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ChatActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 </manifest>
