@@ -61,15 +61,18 @@ public class ContactListActivity extends AppCompatActivity
     @Override
     protected void onResume(){
         super.onResume();
+        contactListPresenter.onResume();
     }
 
     @Override
     protected void onPause() {
         super.onPause();
+        contactListPresenter.onPause();
     }
 
     @Override
     protected void onDestroy() {
+        contactListPresenter.onDestroy();
         super.onDestroy();
     }
 
