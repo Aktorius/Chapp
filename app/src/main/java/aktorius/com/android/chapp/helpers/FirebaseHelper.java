@@ -75,6 +75,17 @@ public class FirebaseHelper {
         return getUserReference(mainEmail).child(CONTACTS_PATH).child(childKey);
     }
 
+    public DatabaseReference getChatsReference(String receiver){
+        String keySender = getAuthUserEmail().replace(".","_");
+        String keyReceiver = receiver.replace(".","_");
+
+        String keyChat = keySender + SEPARATOR + keyReceiver;
+        if (keySender.compareTo(keyReceiver) > 0) {
+            keyChat = keyReceiver + SEPARATOR + keySender;
+        }
+        return dataReference.getRoot().child(CHATS_PATH).child(keyChat);
+    }
+
     public void changeUserConnectionStatus(boolean online) {
         if (getMyUserReference() != null) {
             Map<String, Object> updates = new HashMap<String, Object>();
