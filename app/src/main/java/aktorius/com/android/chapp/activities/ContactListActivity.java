@@ -133,7 +133,10 @@ public class ContactListActivity extends AppCompatActivity
 
     @Override
     public void onItemClick(User user) {
-        //TODO: start a chat
+        Intent i = new Intent(this, ChatActivity.class);
+        i.putExtra(ChatActivity.EMAIL_KEY, user.getEmail());
+        i.putExtra(ChatActivity.ONLINE_KEY, user.isOnline());
+        startActivity(i);
     }
 
     @Override
