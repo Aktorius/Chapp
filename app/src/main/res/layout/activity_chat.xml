@@ -34,32 +34,35 @@
         <android.support.v7.widget.RecyclerView
             android:id="@+id/messageRecyclerView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/layou_margin_chat_view"
+            android:layout_marginRight="@dimen/layou_margin_chat_view"
+            android:layout_marginTop="@dimen/layou_margin_chat_view"
             app:layout_behavior="@string/appbar_scrolling_view_behavior"
-            android:layout_marginLeft="@dimen/activity_horizontal_margin"
-            android:layout_marginRight="@dimen/activity_horizontal_margin"
-            android:layout_marginTop="@dimen/activity_horizontal_margin"
             android:layout_above="@+id/btnSendMessage" />
 
         <EditText
+            android:id="@+id/editTxtMessage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/editTxtMessage"
-            android:layout_margin="@dimen/activity_horizontal_margin"
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
+            android:layout_margin="@dimen/activity_horizontal_margin"
             android:layout_toLeftOf="@+id/btnSendMessage"
             android:layout_toStartOf="@+id/btnSendMessage" />
 
         <ImageButton
+            android:id="@+id/btnSendMessage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/btnSendMessage"
-            android:layout_margin="@dimen/activity_horizontal_margin"
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
-            android:tint="@android:color/black"
+            android:layout_margin="@dimen/activity_horizontal_margin"
             android:background="@android:color/transparent"
-            android:src="@android:drawable/ic_menu_send"/>
+            android:src="@android:drawable/ic_menu_send"
+            android:tint="@android:color/black" />
     </RelativeLayout>
 </android.support.design.widget.CoordinatorLayout>

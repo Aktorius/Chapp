@@ -6,4 +6,7 @@
     <dimen name="avatar_width">48dp</dimen>
     <dimen name="avatar_height">48dp</dimen>
     <dimen name="avatar_border_width">1dp</dimen>
+    <dimen name="layou_margin_chat_view">10dp</dimen>
+    <dimen name="message_padding">10dp</dimen>
+    <dimen name="layout_margin_bottom_chat_messages">5dp</dimen>
 </resources>
