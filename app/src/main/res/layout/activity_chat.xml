@@ -46,13 +46,14 @@
 
         <EditText
             android:id="@+id/editTxtMessage"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/chat_input_margin"
+            android:layout_marginBottom="@dimen/chat_input_margin"
             android:layout_toLeftOf="@+id/btnSendMessage"
-            android:layout_toStartOf="@+id/btnSendMessage" />
+            android:layout_alignLeft="@+id/messageRecyclerView"
+            android:layout_alignStart="@+id/messageRecyclerView" />
 
         <ImageButton
             android:id="@+id/btnSendMessage"
@@ -60,7 +61,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
-            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_margin="@dimen/chat_input_margin"
             android:background="@android:color/transparent"
             android:src="@android:drawable/ic_menu_send"
             android:tint="@android:color/black" />
