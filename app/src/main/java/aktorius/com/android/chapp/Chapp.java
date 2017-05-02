@@ -17,6 +17,8 @@ public class Chapp extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        setupFirebase();
+        setupImageLoader();
     }
 
     private void setupImageLoader() {

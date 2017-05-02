@@ -2,9 +2,9 @@ package aktorius.com.android.chapp.services.login;
 
 import org.greenrobot.eventbus.Subscribe;
 
-import aktorius.com.android.chapp.contracts.LoginInteractor;
-import aktorius.com.android.chapp.contracts.LoginPresenter;
-import aktorius.com.android.chapp.contracts.LoginView;
+import aktorius.com.android.chapp.contracts.login.LoginInteractor;
+import aktorius.com.android.chapp.contracts.login.LoginPresenter;
+import aktorius.com.android.chapp.contracts.login.LoginView;
 import aktorius.com.android.chapp.events.LoginEvent;
 import aktorius.com.android.chapp.libraries.EventBus;
 import aktorius.com.android.chapp.libraries.GreenRobotEventBus;

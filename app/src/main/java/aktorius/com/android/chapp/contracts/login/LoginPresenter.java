@@ -1,4 +1,4 @@
-package aktorius.com.android.chapp.contracts;
+package aktorius.com.android.chapp.contracts.login;
 
 import aktorius.com.android.chapp.events.LoginEvent;
 

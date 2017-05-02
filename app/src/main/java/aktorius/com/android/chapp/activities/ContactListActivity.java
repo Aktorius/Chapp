@@ -15,10 +15,11 @@ import java.util.ArrayList;
 import aktorius.com.android.chapp.Chapp;
 import aktorius.com.android.chapp.R;
 import aktorius.com.android.chapp.adapters.ContactListAdapter;
-import aktorius.com.android.chapp.contracts.ContactListPresenter;
-import aktorius.com.android.chapp.contracts.ContactListView;
-import aktorius.com.android.chapp.contracts.OnItemClickListener;
+import aktorius.com.android.chapp.contracts.contactlist.ContactListPresenter;
+import aktorius.com.android.chapp.contracts.contactlist.ContactListView;
+import aktorius.com.android.chapp.contracts.contactlist.OnItemClickListener;
 import aktorius.com.android.chapp.domain.User;
+import aktorius.com.android.chapp.fragments.AddContactFragment;
 import aktorius.com.android.chapp.libraries.ImageLoader;
 import aktorius.com.android.chapp.services.contactlist.ContactListPresenterImpl;
 import butterknife.BindView;
@@ -60,15 +61,18 @@ public class ContactListActivity extends AppCompatActivity
     @Override
     protected void onResume(){
         super.onResume();
+        contactListPresenter.onResume();
     }
 
     @Override
     protected void onPause() {
         super.onPause();
+        contactListPresenter.onPause();
     }
 
     @Override
     protected void onDestroy() {
+        contactListPresenter.onDestroy();
         super.onDestroy();
     }
 
@@ -97,7 +101,8 @@ public class ContactListActivity extends AppCompatActivity
 
     @OnClick(R.id.fab)
     public void addContact(){
-        //TODO: Action when pressing the fab
+        AddContactFragment frag = new AddContactFragment();
+        frag.show(getSupportFragmentManager(), "");
     }
 
     private void setupAdapter() {
@@ -128,7 +133,10 @@ public class ContactListActivity extends AppCompatActivity
 
     @Override
     public void onItemClick(User user) {
-        //TODO: start a chat
+        Intent i = new Intent(this, ChatActivity.class);
+        i.putExtra(ChatActivity.EMAIL_KEY, user.getEmail());
+        i.putExtra(ChatActivity.ONLINE_KEY, user.isOnline());
+        startActivity(i);
     }
 
     @Override
