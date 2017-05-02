@@ -13,9 +13,9 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import aktorius.com.android.chapp.R;
-import aktorius.com.android.chapp.contracts.AddContactPresenter;
-import aktorius.com.android.chapp.contracts.AddContactView;
-import aktorius.com.android.chapp.services.addcontact.AddContactPresenterImpl;
+import aktorius.com.android.chapp.contracts.contactlist.AddContactPresenter;
+import aktorius.com.android.chapp.contracts.contactlist.AddContactView;
+import aktorius.com.android.chapp.services.contactlist.AddContactPresenterImpl;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 

@@ -14,8 +14,8 @@ import android.widget.RelativeLayout;
 import java.util.List;
 
 import aktorius.com.android.chapp.R;
-import aktorius.com.android.chapp.contracts.LoginPresenter;
-import aktorius.com.android.chapp.contracts.LoginView;
+import aktorius.com.android.chapp.contracts.login.LoginPresenter;
+import aktorius.com.android.chapp.contracts.login.LoginView;
 import aktorius.com.android.chapp.services.login.LoginPresenterImpl;
 import butterknife.BindView;
 import butterknife.ButterKnife;

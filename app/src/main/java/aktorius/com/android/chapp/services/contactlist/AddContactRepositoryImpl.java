@@ -1,11 +1,11 @@
-package aktorius.com.android.chapp.services.addcontact;
+package aktorius.com.android.chapp.services.contactlist;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.ValueEventListener;
 
-import aktorius.com.android.chapp.contracts.AddContactRepository;
+import aktorius.com.android.chapp.contracts.contactlist.AddContactRepository;
 import aktorius.com.android.chapp.domain.User;
 import aktorius.com.android.chapp.events.AddContactEvent;
 import aktorius.com.android.chapp.helpers.FirebaseHelper;

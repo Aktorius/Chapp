@@ -1,4 +1,4 @@
-package aktorius.com.android.chapp.contracts;
+package aktorius.com.android.chapp.contracts.login;
 
 /**
  * Created by Aktorius on 26/04/2017.

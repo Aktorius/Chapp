@@ -1,10 +1,10 @@
-package aktorius.com.android.chapp.services.addcontact;
+package aktorius.com.android.chapp.services.contactlist;
 
 import org.greenrobot.eventbus.Subscribe;
 
-import aktorius.com.android.chapp.contracts.AddContactInteractor;
-import aktorius.com.android.chapp.contracts.AddContactPresenter;
-import aktorius.com.android.chapp.contracts.AddContactView;
+import aktorius.com.android.chapp.contracts.contactlist.AddContactInteractor;
+import aktorius.com.android.chapp.contracts.contactlist.AddContactPresenter;
+import aktorius.com.android.chapp.contracts.contactlist.AddContactView;
 import aktorius.com.android.chapp.events.AddContactEvent;
 import aktorius.com.android.chapp.libraries.EventBus;
 import aktorius.com.android.chapp.libraries.GreenRobotEventBus;

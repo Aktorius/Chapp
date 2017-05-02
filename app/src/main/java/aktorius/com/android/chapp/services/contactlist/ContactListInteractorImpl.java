@@ -1,7 +1,7 @@
 package aktorius.com.android.chapp.services.contactlist;
 
-import aktorius.com.android.chapp.contracts.ContactListInteractor;
-import aktorius.com.android.chapp.contracts.ContactListRepository;
+import aktorius.com.android.chapp.contracts.contactlist.ContactListInteractor;
+import aktorius.com.android.chapp.contracts.contactlist.ContactListRepository;
 
 /**
  * Created by Aktorius on 27/04/2017.

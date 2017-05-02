@@ -1,7 +1,7 @@
 package aktorius.com.android.chapp.services.login;
 
-import aktorius.com.android.chapp.contracts.LoginInteractor;
-import aktorius.com.android.chapp.contracts.LoginRepository;
+import aktorius.com.android.chapp.contracts.login.LoginInteractor;
+import aktorius.com.android.chapp.contracts.login.LoginRepository;
 
 /**
  * Created by Aktorius on 26/04/2017.

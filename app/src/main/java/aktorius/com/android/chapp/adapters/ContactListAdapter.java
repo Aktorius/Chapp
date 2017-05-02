@@ -10,7 +10,7 @@ import android.widget.TextView;
 import java.util.List;
 
 import aktorius.com.android.chapp.R;
-import aktorius.com.android.chapp.contracts.OnItemClickListener;
+import aktorius.com.android.chapp.contracts.contactlist.OnItemClickListener;
 import aktorius.com.android.chapp.domain.User;
 import aktorius.com.android.chapp.helpers.AvatarHelper;
 import aktorius.com.android.chapp.libraries.ImageLoader;

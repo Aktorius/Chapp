@@ -2,10 +2,10 @@ package aktorius.com.android.chapp.services.contactlist;
 
 import org.greenrobot.eventbus.Subscribe;
 
-import aktorius.com.android.chapp.contracts.ContactListInteractor;
-import aktorius.com.android.chapp.contracts.ContactListPresenter;
-import aktorius.com.android.chapp.contracts.ContactListSessionInteractor;
-import aktorius.com.android.chapp.contracts.ContactListView;
+import aktorius.com.android.chapp.contracts.contactlist.ContactListInteractor;
+import aktorius.com.android.chapp.contracts.contactlist.ContactListPresenter;
+import aktorius.com.android.chapp.contracts.contactlist.ContactListSessionInteractor;
+import aktorius.com.android.chapp.contracts.contactlist.ContactListView;
 import aktorius.com.android.chapp.domain.User;
 import aktorius.com.android.chapp.events.ContactListEvent;
 import aktorius.com.android.chapp.libraries.EventBus;

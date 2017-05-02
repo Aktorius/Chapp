@@ -4,7 +4,7 @@ import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 
-import aktorius.com.android.chapp.contracts.ContactListRepository;
+import aktorius.com.android.chapp.contracts.contactlist.ContactListRepository;
 import aktorius.com.android.chapp.domain.User;
 import aktorius.com.android.chapp.events.ContactListEvent;
 import aktorius.com.android.chapp.helpers.FirebaseHelper;
