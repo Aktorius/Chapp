@@ -26,10 +26,15 @@
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rvContacts"
         android:layout_width="match_parent"
-        android:layout_height="442dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:paddingTop="@dimen/contact_list_padding"
+        android:layout_marginLeft="@dimen/contact_list_rv_margin"
+        android:layout_marginRight="@dimen/contact_list_rv_margin"
         android:scrollbars="vertical"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        android:layout_margin="@dimen/activity_horizontal_margin" />
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
@@ -37,8 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
-        android:tint="@android:color/white"
         android:src="@android:drawable/ic_input_add"
-        />
+        android:tint="@android:color/white" />
 
 </android.support.design.widget.CoordinatorLayout>

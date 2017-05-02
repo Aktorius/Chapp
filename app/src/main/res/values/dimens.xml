@@ -9,4 +9,6 @@
     <dimen name="layou_margin_chat_view">10dp</dimen>
     <dimen name="message_padding">10dp</dimen>
     <dimen name="layout_margin_bottom_chat_messages">5dp</dimen>
+    <dimen name="contact_list_rv_margin">5dp</dimen>
+    <dimen name="contact_list_padding">7dp</dimen>
 </resources>
